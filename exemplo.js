@@ -1,21 +1,21 @@
-const prompt = require('prompt-sync')()
+const prompt = require(`prompt-sync`)()
 
-//Informando idade
+const idade = parseInt(prompt(`Informe a sua idade`))
 
-let Nota = prompt(`Qual foi sua nota?`)
+const ehMaiordeIdade = idade >= 18
+const naoehMaiordeIdade = !ehMaiordeIdade
 
-if (Nota >= 70 ) {
-    console.log(`voce foi aprovado`)
+if (naoehMaiordeIdade) {
+    console.log(`é Menor de Idade`)
 } 
-
-else if (Nota >= 30) {
-    console.log(`Voce esta na recuperação`)
-}
-
 else {
-    console.log(`Voce foi reprovado`)
+    console.log(`é maior de idade`)
 }
 
-
-
-
+// operadores relacionais
+// MAIOR QUE ( > )
+// MENOR QUE ( < )
+// MAIOR OU IGUAL A ( >= )
+// MENOR OU IGUAL A ( <= )
+// IGUAL A ( == )
+// DIFERENTE DE ( != )
